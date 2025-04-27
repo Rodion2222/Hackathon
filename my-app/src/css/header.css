@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-sections {
+    display: flex;
+}
+
+.header-sections {
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    /* margin: 5px; */
+}
+
+.section-button {
+    margin-right: 15px; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.section-button:hover {
+    color: #626279;
+}
+
+.settings img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 90%;
+    top: 2%;
+}

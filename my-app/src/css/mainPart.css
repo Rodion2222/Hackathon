@@ -1,0 +1,62 @@
+.footer {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Gilroy-Medium';
+    color: #f5f5f5;
+    display: grid;
+    gap: 30px;
+    margin: 0 auto;
+}  
+
+.footer-title {
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 35px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+}
+
+.h2 {
+    font-size: 35px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+}
+.footer-about {
+    font-size: 23px;
+}
+
+p{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+}
+
+.footer-copyright {
+    font-size: 23px;
+    display: inline-grid;
+    text-align: center;
+    margin: 40px;
+}
+
+.imgTg {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 46%;
+    bottom: 14%;
+}
+
+.Orange {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    z-index: -99;
+    width: 50%;
+}
+.BlueC {
+    position: absolute;
+    top: 450px;
+    right: 0;
+    z-index: -99;
+    width: 70%;
+}
