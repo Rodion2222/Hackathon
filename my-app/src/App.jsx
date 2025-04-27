@@ -1,18 +1,28 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './Header';
-import MainPage from './pages/MainPage';
-import MapPage from './pages/MapPage';
-import AlertsPage from './pages/AlertsPage';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import MapPage from './../src/components/mapPage';
+import Main from './components/mainPart';
+import AlertPage from './../src/components/alertPage';
+import Logo from './../src/img/setting.svg';
+import "./../src/css/header.css";
 
 function App() {
   return (
-    <Router>
-      <Header />
+    <Router className = "header">
+      <nav className='header-sections'>
+        <Link className='section-button' to="/">Главная</Link>
+        <Link className='section-button' to="/map">Карта</Link>
+        <Link className='section-button' to="/alerts">Оповещения</Link>
+      </nav>
+      
       <Routes>
-        <Route path="/" element={<MainPage />} /> 
+        <Route path="/" element={<Main />} />
         <Route path="/map" element={<MapPage />} />
-        <Route path="/alerts" element={<AlertsPage />} />
+        <Route path="/alerts" element={<AlertPage />} />
       </Routes>
+      <div className="settings">
+        <img src={Logo} alt="Настройки" />
+      </div>
     </Router>
   );
 }
